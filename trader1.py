@@ -208,7 +208,7 @@ class ConTrader(tpqoa.tpqoa):
             pass
         
 if __name__ == "__main__":
-    trader = ConTrader(r"C:\Users\gupta\Downloads\Oanda_firststeps (1)\oanda1.cfg",
+    trader = ConTrader(r"file path with api key ",
                        "EUR_USD", "5min",window=1 ,units= 100, sl_perc = 0.01, tp_perc = 0.01)
     trader.start_trading(days = 1, max_attempts =  10, wait = 10, wait_increase = 0.5)
     
